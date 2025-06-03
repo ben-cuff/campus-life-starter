@@ -3,9 +3,12 @@ p {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
-.center {
+.container {
 	text-align: center;
 	justify-content: center;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
 
 #student-orgs {
@@ -23,12 +26,15 @@ header {
 	margin: 20px;
 	padding: 10px;
 	background-image: url(download.jpg);
+	width: 100%;
 }
 
 nav {
 	margin: 10px;
 	padding: 5px;
 	border: 2px solid black;
+	border-radius: 5px;
+	width: 100%;
 }
 
 #student-orgs {
@@ -53,4 +59,27 @@ nav ul li a {
 
 nav ul li a:hover {
 	color: black;
+}
+
+#student-news {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#student-news h2 {
+    width: 100%;
+    text-align: center;
+}
+
+#student-news p {
+    width: 100%;
+    text-align: center;
+}
+
+#news-headline {
+    display: flex;
+    flex: 1 1 25%;
+    height: auto;
+    flex-direction: column;
 }
